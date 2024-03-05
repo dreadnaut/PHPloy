@@ -1,3 +1,20 @@
+# PHPloy, a fork
+
+This repository is an attempt to continue development on PHPloy, since @banago
+has been unresponsive for some time.
+
+The initial plan is to *make PHPloy work* on PHP 8.2 and higher. A vague
+roadmap would include:
+
+- convert test suite to GitHub Actions
+- introduce unit tests (possibly written with [Pest](https://pestphp.com/))
+- add type hints and adopt modern PHP features
+
+Help is welcome, in the shape of suggestions or pull requests. Thank you!
+
+
+---
+
 # PHPloy
 **Version 4.9.2**
 
