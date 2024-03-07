@@ -31,7 +31,7 @@ PHPloy stores a file called `.revision` on your server. This file contains the h
 If you have composer installed in your machine, you can pull PHPloy globally like this:
 
 ```bash
-composer global require "banago/phploy"
+composer global require dreadnaut/phploy
 ```
 
 Make sure to place the `$HOME/.composer/vendor/bin` directory (or the [equivalent directory](http://stackoverflow.com/a/40470979/512277) for your OS) 
