@@ -305,7 +305,7 @@ To turn logging on, add this to `phploy.ini`:
 
 ## Contribute
 
-Contributions are very welcome; PHPloy is great because of the contributors. Please check out the [issues](https://github.com/banago/PHPloy/issues). 
+Contributions are very welcome; PHPloy is great because of the contributors. Please check out the [issues](https://github.com/dreadnaut/PHPloy/issues). 
 
 ## Credits
 
