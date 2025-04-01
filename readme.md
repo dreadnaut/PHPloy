@@ -1,5 +1,8 @@
 # PHPloy, a fork
 
+⚠️ Development on the [original version](https://github.com/banago/phploy) might
+have restarted. Have a look there before picking up this version.
+
 This repository is an attempt to continue development on PHPloy, since @banago
 has been unresponsive for some time.
 
