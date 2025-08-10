@@ -280,7 +280,7 @@ class PHPloy
      * @param Options|null $opt an optional set of Options, if null options will be read from CLI args
      * @throws \Exception
      */
-    public function __construct(Options $opt = null)
+    public function __construct(?Options $opt = null)
     {
         $this->opt = $opt !== null ? $opt : new Options(new \League\CLImate\CLImate());
         $this->cli = $this->opt->cli;
@@ -528,7 +528,7 @@ class PHPloy
      * @return array an associative array of server names and options
      * @throws \Exception
      */
-    public function prepareServers($iniFile = null)
+    public function prepareServers(?string $iniFile = null)
     {
         if (empty($iniFile)) {
             $iniFile = $this->repo . DIRECTORY_SEPARATOR . $this->iniFileName;
@@ -1112,7 +1112,7 @@ class PHPloy
      *                     Each of these contains an array of filenames and paths.
      * @throws \Exception
      */
-    public function push($files, $localRevision = null)
+    public function push($files, ?string $localRevision = null)
     {
         if (empty($localRevision)) {
             // We will write this in the server
@@ -1266,7 +1266,7 @@ class PHPloy
     /**
      * Sets revision on the server.
      */
-    public function setRevision($localRevision = null)
+    public function setRevision(?string $localRevision = null)
     {
         if (empty($localRevision)) {
             $localRevision = $this->currentRevision();

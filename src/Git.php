@@ -20,14 +20,14 @@ class Git
     /**
      * @var string Git repository
      */
-    protected $repo;
+    protected string $repo;
 
     /**
      * Git constructor.
      *
      * @param string $repo
      */
-    public function __construct($repo = null)
+    public function __construct(?string $repo = null)
     {
         $this->repo = $repo;
         $this->branch = $this->command('rev-parse --abbrev-ref HEAD')[0];
@@ -65,7 +65,7 @@ class Git
      *
      * @return array Lines of the output
      */
-    public function command($command, $repoPath = null)
+    public function command($command, ?string $repoPath = null)
     {
         if (!$repoPath) {
             $repoPath = $this->repo;
@@ -86,7 +86,7 @@ class Git
      *
      * @return array
      */
-    public function diff($remoteRevision, $localRevision, $repoPath = null)
+    public function diff($remoteRevision, $localRevision, ?string $repoPath = null)
     {
         if (empty($remoteRevision)) {
             $command = 'ls-files';
@@ -108,7 +108,7 @@ class Git
      *
      * @return array
      */
-    public function checkout($branch, $repoPath = null)
+    public function checkout($branch, ?string $repoPath = null)
     {
         $command = 'checkout '.$branch;
 

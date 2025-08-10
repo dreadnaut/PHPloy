@@ -21,7 +21,7 @@ class Options
      * @param array $argv an optional argv array, otherwise arguments will be read from CLI
      * @throws \Exception
      */
-    public function __construct($climate, array $argv = null)
+    public function __construct($climate, ?array $argv = null)
     {
         $this->cli = $climate;
 
@@ -114,7 +114,7 @@ class Options
      * @param array|null $argv
      * @throws \Exception
      */
-    protected function parse(array $argv = null)
+    protected function parse(?array $argv = null)
     {
         $this->cli->arguments->parse($argv);
     }
